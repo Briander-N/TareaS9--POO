@@ -27,4 +27,13 @@ public class Cliente extends Persona{
         return super.getCorreo();
     }
 
+    @Override
+    public String toString() {
+        return "Codigo: " + codigoCliente +
+                " | Nombre: " + getNombre() +
+                " | Correo: " + getCorreo() +
+                " | Edad: " + getEdad() +
+                " | Membresia: " + tipoMembresia;
+    }
+
 }
